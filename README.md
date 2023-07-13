@@ -2,7 +2,9 @@
 
 This module creates a npc that allows you to enter a WoWHead URL to get the given GearSet by email.
 
-WoWHead page https://www.wowhead.com/classic/gear-sets
+WoWHead pages:
+    1. https://www.wowhead.com/classic/gear-sets
+    2. https://www.wowhead.com/wotlk/gear-sets
 
 ### Requirements:
     1. Server compiled with https://github.com/azerothcore/mod-eluna
