@@ -14,3 +14,6 @@ WoWHead page https://www.wowhead.com/classic/gear-sets
     2. Customize file lua_scripts/wowhead.lua: adjust API_ENDPOINT variable with the Http Server main.py URL.
     3. [Optional] execute up sql from databas directory.
     4. [Optional] create npc with a gm command: .npc add 3442
+
+### Example video
+![example](assets/example.gif)
