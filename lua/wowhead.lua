@@ -1,6 +1,6 @@
 local API_ENDPOINT = "http://localhost:1337" -- Modify API url
 local WowHeadRedeemer = {
-    Entry = 3442, -- CreatureEntry
+    Entry = 210000, -- CreatureEntry
 }
 
 function extractIdentifier(url)
