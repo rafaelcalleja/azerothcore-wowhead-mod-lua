@@ -45,6 +45,10 @@ def send_gear_by_build(player_name: str, set_name: str):
         item_id = items_and_enchants.get(str(item), {}).get('item')
         email_items.append(EmailItem(item_id))
 
+        gems = items_and_enchants.get(str(item), {}).get('gems', {})
+        for index in gems:
+            email_items.append(EmailItem(gems[index]))
+
     if len(email_items) > 0:
         gm = SoapClient(os.environ.get('AZEROTHCORE_REMOTE_ADDRESS'), os.environ.get('GM_USERNAME'), os.environ.get('GM_PASSWORD'))
         gm.send_items(player_name, 'Tienes un paquete de WoWHead', 'Disfrutalo', email_items)
